@@ -1,4 +1,24 @@
 .hero-container {
   height: 100vh;
-  background-color: lightblue;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.hero-text {
+  height: ;
+}
+
+.contact-me {
+  width: 168px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #0e1154;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
