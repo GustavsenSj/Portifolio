@@ -29,11 +29,12 @@ p {
   line-height: normal;
 }
 
-.fade-in {
-  animation: fade-in 1s ease-in-out forwards;
-}
 .fade-out {
-  animation: fade-out 1s ease-in-out forwards;
+  view-timeline-name: --fade-out-object;
+  view-timeline-axis: block;
+  animation: linear fade-out both;
+  animation-timeline: --fade-out-object;
+  animation-range: contain 75% cover 90%;
 }
 
 @keyframes fade-out {
@@ -43,23 +44,4 @@ p {
   to {
     opacity: 0;
   }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.scroll-mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, transparent, black);
-  pointer-events: none; /* Allows content underneath to be interactive */
 }
