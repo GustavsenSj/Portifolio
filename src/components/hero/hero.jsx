@@ -1,7 +1,16 @@
 import "./hero.css";
-
 function Hero() {
-  return <div className="hero-container">Hero</div>;
+  return (
+    <div className="hero-container">
+      <div className="hero-text fade-out">
+        <h1>Hi, and welcome!</h1>
+        <h1>My name is Sjur and i am a full-stack developer</h1>
+      </div>
+      <div className="contact-me fade-out">
+        <p>Contact me</p>
+      </div>
+    </div>
+  );
 }
 
 export default Hero;
