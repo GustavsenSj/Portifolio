@@ -21,11 +21,18 @@ h1 {
   font-weight: 600;
   line-height: normal;
 }
-p {
+h2 {
   color: #fff;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+}
+p {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 00;
   line-height: normal;
 }
 
@@ -44,4 +51,30 @@ p {
   to {
     opacity: 0;
   }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade {
+  view-timeline-name: --fade-out-object;
+  view-timeline-axis: block;
+  animation: linear fade-in both;
+  animation-timeline: --fade-out-object;
+  animation-range: contain 0% contain 100%;
 }
