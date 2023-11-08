@@ -4,11 +4,13 @@ import "./index.css";
 import Hero from "./components/hero/hero.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import About from "./components/about/about.jsx";
+import Projects from "./components/projects/projects.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Navbar />
     <Hero />
     <About />
+    <Projects />
   </React.StrictMode>
 );
