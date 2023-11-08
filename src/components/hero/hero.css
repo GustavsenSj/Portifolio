@@ -94,6 +94,45 @@
   }
 }
 
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: absolute;
+  bottom: 10%;
+  & > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#arrow {
+  opacity: 0;
+  animation: arrow 1s ease-in-out infinite 8.5s,
+    show-arrow 1s ease-in-out 8.5s forwards;
+}
+@keyframes show-arrow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* blobs from https://codepen.io/LA_water/pen/rNaYZBb */
 .blob {
   background: #90909a4a;

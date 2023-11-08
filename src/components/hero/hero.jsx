@@ -1,4 +1,5 @@
 import "./hero.css";
+
 function Hero() {
   return (
     <div id="landing">
@@ -18,6 +19,20 @@ function Hero() {
           <div className="contact-me fade">
             <p>Contact me</p>
           </div>
+        </div>
+        <div className="arrow-container fade">
+          <svg height="50px" width="50px" xmlns="http://www.w3.org/2000/svg">
+            <polygon
+              fill="#ffffff96"
+              id="arrow"
+              points="0.046,2.582 2.13,0.498 12.967,11.334 23.803,0.498 25.887,2.582 12.967,15.502"
+            />
+            <polygon
+              fill="#ffffff96"
+              id="arrow"
+              points="0.046,13.582 2.13,11.498 12.967,22.334 23.803,11.498 25.887,13.582 12.967,26.502"
+            />
+          </svg>
         </div>
       </div>
     </div>
