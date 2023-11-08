@@ -15,12 +15,15 @@
   width: 168px;
   height: 58px;
   flex-shrink: 0;
-  opacity: 0;
+
   border-radius: 30px;
   background: #0e1154;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.contact-me-container {
+  opacity: 0;
   animation: fadeIn 1s ease-in-out 7.5s forwards;
 }
 

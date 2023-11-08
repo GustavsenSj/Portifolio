@@ -4,6 +4,15 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   background: linear-gradient(
     180deg,
@@ -32,7 +41,6 @@ p {
   color: #fff;
   font-size: 24px;
   font-style: normal;
-  font-weight: 00;
   line-height: normal;
 }
 

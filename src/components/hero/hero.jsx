@@ -10,8 +10,10 @@ function Hero() {
           My name is Sjur and i am a full-stack developer
         </h1>
       </div>
-      <div className="contact-me fade">
-        <p>Contact me</p>
+      <div className="contact-me-container">
+        <div className="contact-me fade">
+          <p>Contact me</p>
+        </div>
       </div>
     </div>
   );
