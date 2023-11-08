@@ -2,6 +2,9 @@ import "./hero.css";
 function Hero() {
   return (
     <div className="hero-container">
+      <div className="blob shape1"></div>
+      <div className="blob shape2"></div>
+      <div className="blob shape3"></div>
       <div className="hero-text fade">
         <h1 className="line1">
           Hi, and welcome! <br />
