@@ -12,10 +12,9 @@
 }
 
 .contact-me {
+  cursor: pointer;
   width: 168px;
   height: 58px;
-  flex-shrink: 0;
-
   border-radius: 30px;
   background: #0e1154;
   display: flex;
@@ -25,6 +24,10 @@
 .contact-me-container {
   opacity: 0;
   animation: fadeIn 1s ease-in-out 7.5s forwards;
+}
+
+.contact-me-container:hover {
+  transform: scale(1.03);
 }
 
 @keyframes fadeIn {
@@ -37,6 +40,8 @@
 }
 
 .line1 {
+  color: rgb(255 140 245);
+  font-weight: 700;
   width: 17rem;
   overflow: hidden;
   white-space: nowrap;
@@ -89,7 +94,7 @@
   }
 }
 
-/* blobs from https://codepen.io/LA_water/pen/rNaYZBb*/
+/* blobs from https://codepen.io/LA_water/pen/rNaYZBb */
 .blob {
   background: #90909a4a;
   height: 200px;
