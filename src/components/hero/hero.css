@@ -9,16 +9,79 @@
 }
 
 .hero-text {
-  height: ;
 }
 
 .contact-me {
   width: 168px;
   height: 58px;
   flex-shrink: 0;
+  opacity: 0;
   border-radius: 30px;
   background: #0e1154;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease-in-out 7.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line1 {
+  width: 17rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 2.5s steps(30) 0.5s 1 normal both,
+    blink-caret 700ms steps(44) infinite normal, after 0.2s 1 normal both 3s;
+}
+.line2 {
+  width: 46rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing2 4s steps(60) 3.5s 1 normal both,
+    blink-caret 700ms steps(70) infinite normal 3s,
+    after 0.2s 1 normal both 7.5s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17rem;
+  }
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 46rem;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from {
+    border-right: 2px solid transparent;
+  }
+  to {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+  }
+}
+
+@keyframes after {
+  to {
+    border-right-color: transparent;
+  }
 }
