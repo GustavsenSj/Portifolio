@@ -1,5 +1,6 @@
 import "./About.css";
 import sjur from "../../assets/sjur.png";
+import tech from "../../assets/tech.png";
 
 function About() {
   return (
@@ -28,19 +29,19 @@ function About() {
         </div>
         <div className="about-page">
           <div className="image-container fade">
-            <img src={sjur} alt="Image of Sjur" />
+            <img src={tech} alt="Image of Sjur" />
           </div>
           <div className="about-container">
             <p className="fade">
-              Throughout his education, the consultant has gained extensive
-              experience in various areas. He has been involved in several
-              projects, developing backend REST API services in Java, various
-              web applications using technologies such as React, Next.js, and
-              Vue. He is experienced in using both JavaScript and TypeScript.
-              Furthermore, he has also worked on mobile applications using
-              Flutter. For all these projects, Sjur has integrated databases,
-              including SQL databases like PostgreSQL and NoSQL databases like
-              Firebase.{" "}
+              Throughout my work as a consultant and a student I hav gained
+              extensive experience in various areas. I have been involved in
+              several projects, developing backend REST API services in Java and
+              .NET, various web applications using technologies such as React,
+              Next.js, and Angular. I am also experienced in using both
+              JavaScript and TypeScript. Furthermore, I have also worked on
+              mobile applications using Flutter. For all these projects, I ahve
+              used integrated databases, including SQL databases like PostgreSQL
+              and NoSQL databases like Firebase.
             </p>
           </div>
         </div>
