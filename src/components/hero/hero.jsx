@@ -1,6 +1,13 @@
 import "./hero.css";
 
 function Hero() {
+  const scrollToAbout = () => {
+    const element = document.getElementById("about");
+    const yOffset =
+      element.getBoundingClientRect().top -
+      element.getBoundingClientRect().height * 0.25;
+    window.scrollBy({ top: yOffset, behavior: "smooth" });
+  };
   return (
     <div id="landing">
       <div className="hero-container">
@@ -23,7 +30,13 @@ function Hero() {
           </div>
         </div>
         <div className="arrow-container fade">
-          <svg height="50px" width="50px" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            height="50px"
+            width="50px"
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={scrollToAbout}
+            style={{ cursor: "pointer" }}
+          >
             <polygon
               fill="#ffffff96"
               id="arrow"
