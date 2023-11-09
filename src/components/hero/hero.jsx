@@ -4,9 +4,11 @@ function Hero() {
   return (
     <div id="landing">
       <div className="hero-container">
-        <div className="blob shape1"></div>
-        <div className="blob shape2"></div>
-        <div className="blob shape3"></div>
+        <div className="blob-container">
+          <div className="blob shape1"></div>
+          <div className="blob shape2"></div>
+          <div className="blob shape3"></div>
+        </div>
         <div className="hero-text fade">
           <h1 className="line1">
             Hi, and welcome! <br />

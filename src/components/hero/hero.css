@@ -134,6 +134,12 @@
 }
 
 /* blobs from https://codepen.io/LA_water/pen/rNaYZBb */
+.blob-container {
+  view-timeline-axis: block;
+  animation: linear fade-blob both;
+  animation-timeline: --page-scroll;
+  animation-range: 45% 55%;
+}
 .blob {
   background: #90909a4a;
   height: 200px;
@@ -204,5 +210,14 @@
   }
   50% {
     transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
+  }
+}
+
+@keyframes fade-blob {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
   }
 }
