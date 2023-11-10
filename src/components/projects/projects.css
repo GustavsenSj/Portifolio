@@ -1,42 +1,55 @@
+#projects {
+  & > h1 {
+    margin: 20rem 10% 0 10%;
+  }
+}
+
 .project-page {
   display: flex;
   flex-direction: column;
-  padding-top: 10rem;
+  padding-top: 2rem;
   margin: 0 10% 0 10%;
-  gap: 4rem;
+  gap: 15rem;
 }
 .project-content {
   display: flex;
   gap: 2rem;
-  height: 200px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
 }
 .project-container {
-  
   & > h2 {
     text-align: center;
   }
 }
 
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 70%;
+}
 .image-container-blob {
+  overflow: hidden;
   background: #90909a4a;
   height: 200px;
   width: 200px;
   border-radius: 30% 50% 20% 40%;
-  animation: transform-image-blob 40s ease-in-out infinite both alternate,
-  opacity: 0.7;
   z-index: 0;
+  & > img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .image-blob-background {
   aspect-ratio: 1/1;
   transform: rotate(-180deg);
   animation: transform-image-blob 30s ease-in-out infinite both alternate,
-  movement-image-blob 60s ease-in-out infinite both;
+    movement-image-blob 60s ease-in-out infinite both;
 }
-
-
 
 @keyframes transform-image-blob {
   0%,
