@@ -33,8 +33,8 @@
 .image-container-blob {
   overflow: hidden;
   background: #90909a4a;
-  height: 200px;
-  width: 200px;
+  height: 100%;
+
   border-radius: 30% 50% 20% 40%;
   z-index: 0;
   & > img {
