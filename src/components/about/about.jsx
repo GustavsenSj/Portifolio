@@ -1,4 +1,4 @@
-import "./About.css";
+import "./about.css";
 import sjur from "../../assets/sjur.png";
 import tech from "../../assets/tech.png";
 
