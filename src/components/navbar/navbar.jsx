@@ -9,6 +9,7 @@ function Navbar() {
   };
 
   const handleClicked = (value) => {
+    let yOffsetMultiplier = 0.3;
     return () => {
       let element;
       switch (value) {
@@ -27,12 +28,13 @@ function Navbar() {
         default:
           break;
       }
-      console.log(element);
       if (element) {
+        if (window.innerWidth < 700) {
+          yOffsetMultiplier = 0.4;
+        }
         const yOffset =
-          element.getBoundingClientRect().top -
-          element.getBoundingClientRect().height * 0.25;
-
+          element.getBoundingClientRect().y -
+          window.innerHeight * yOffsetMultiplier;
         window.scrollBy({ top: yOffset, behavior: "smooth" });
       }
     };
@@ -53,9 +55,9 @@ function Navbar() {
     <>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className="hamburger-container">
-          <div className="burger-line1"></div>
-          <div className="burger-line2"></div>
-          <div className="burger-line3"></div>
+          <div className={`burger-line1 ${menuOpen ? "clicked" : ""}`}></div>
+          <div className={`burger-line2 ${menuOpen ? "clicked" : ""}`}></div>
+          <div className={`burger-line3 ${menuOpen ? "clicked" : ""}`}></div>
         </div>
         {menuOpen ? <NavBarElements /> : null}
       </div>
