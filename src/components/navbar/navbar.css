@@ -19,3 +19,47 @@
     color: rgba(218, 238, 228, 100);
   }
 }
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  overflow: hidden;
+  > div {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #000000;
+  }
+  > input {
+    position: absolute;
+    opacity: 0;
+    width: 24px;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    display: none;
+  }
+  .hamburger-menu {
+    z-index: 1000;
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    gap: 2rem;
+    padding: 3vh;
+    background-color: #0e115463;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

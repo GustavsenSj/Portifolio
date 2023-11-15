@@ -1,6 +1,13 @@
 import "./navbar.css";
+import { useState } from "react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const handleClicked = (value) => {
     return () => {
       let element;
@@ -31,13 +38,31 @@ function Navbar() {
     };
   };
 
+  const NavBarElements = () => {
+    return (
+      <>
+        <p onClick={handleClicked("landing")}>Home</p>
+        <p onClick={handleClicked("about")}>About</p>
+        <p onClick={handleClicked("project")}>Projects</p>
+        <p onClick={handleClicked("contact")}>Contact</p>
+      </>
+    );
+  };
+
   return (
-    <div className="navbar-container">
-      <p onClick={handleClicked("landing")}>Home</p>
-      <p onClick={handleClicked("about")}>About</p>
-      <p onClick={handleClicked("project")}>Projects</p>
-      <p onClick={handleClicked("contact")}>Contact</p>
-    </div>
+    <>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className="hamburger-container">
+          <div className="burger-line1"></div>
+          <div className="burger-line2"></div>
+          <div className="burger-line3"></div>
+        </div>
+        {menuOpen ? <NavBarElements /> : null}
+      </div>
+      <div className="navbar-container">
+        <NavBarElements />
+      </div>
+    </>
   );
 }
 

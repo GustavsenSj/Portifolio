@@ -15,12 +15,12 @@ function About() {
               individual. I Have always been interested in technology and enjoys
               to keep myself up to date with new technologies. I recently
               completed a bachelor&apos;s degree in computer science with a
-              specialization in application development at NTNU. Here, I had the
-              opportunity to work with a wide range of technologies and work
-              methodologies, both independently and as part of a team. In
-              addition to the core subjects of the studies, I had elective
-              courses in Mobile Applications, Computer Graphics, Game
-              Development, and Internship.
+              specialization in application development at NTNU. <br /> <br />
+              During my studies I had the opportunity to work with a wide range
+              of technologies and work methodologies, both independently and as
+              part of a team. In addition to the core subjects of the studies, I
+              had elective courses in Mobile Applications, Computer Graphics,
+              Game Development, and Internship.
             </p>
           </div>
           <div className="image-container fade">
