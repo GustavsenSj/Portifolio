@@ -6,10 +6,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  overflow: hidden;
 }
 
 .hero-text {
+  overflow: hidden;
 }
 
 .contact-me {
@@ -136,6 +136,10 @@
 
 /* blobs from https://codepen.io/LA_water/pen/rNaYZBb */
 .blob-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
   view-timeline-axis: block;
   animation: linear fade-blob both;
   animation-timeline: --page-scroll;
