@@ -1,6 +1,6 @@
 .hero-container {
   height: 100vh;
-  margin-left: 10%;
+  margin-left: 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -227,5 +227,73 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-container {
+    margin-left: 10vw;
+  }
+  .contact-me-container {
+    animation: fadeIn 1s ease-in-out 9s forwards;
+  }
+  .arrow-container {
+    height: 30px;
+  }
+
+  .line1 {
+    color: rgb(255 140 245);
+    font-weight: 700;
+    width: 17rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 2.5s steps(30) 0.5s 1 normal both,
+      blink-caret 700ms steps(44) infinite normal, after 0.2s 1 normal both 3s;
+  }
+  .line2 {
+    width: 18rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing2 3s steps(60) 3.5s 1 normal both,
+      blink-caret 700ms steps(70) infinite normal 3s,
+      after 0.2s 1 normal both 6.2s;
+  }
+  .line3 {
+    width: 18rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing3 2.5s steps(60) 6.5s 1 normal both,
+      blink-caret 700ms steps(70) infinite normal 6.5s,
+      after 0.2s 1 normal both 9s;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 13rem;
+    }
+  }
+
+  @keyframes typing2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18rem;
+    }
+  }
+
+  @keyframes typing3 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 16rem;
+    }
   }
 }

@@ -1,13 +1,42 @@
 import "./hero.css";
+import { useEffect, useState } from "react";
 
 function Hero() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  let yOffsetMultiplier = 0.25;
+
   const scrollToAbout = () => {
     const element = document.getElementById("about");
+
+    if (window.innerWidth < 700) {
+      yOffsetMultiplier = 0.15;
+    }
     const yOffset =
       element.getBoundingClientRect().top -
-      element.getBoundingClientRect().height * 0.25;
+      element.getBoundingClientRect().height * yOffsetMultiplier;
     window.scrollBy({ top: yOffset, behavior: "smooth" });
+    console.log(yOffset);
   };
+
+  useEffect(() => {
+    // Update isSmallScreen state on window resize
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 700);
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div id="landing">
       <div className="hero-container">
@@ -20,9 +49,16 @@ function Hero() {
           <h1 className="line1">
             Hi, and welcome! <br />
           </h1>
-          <h1 className="line2">
-            My name is Sjur and i am a full-stack developer
-          </h1>
+          {isSmallScreen ? (
+            <>
+              <h1 className="line2">My name is Sjur and i am</h1>
+              <h1 className="line3">a full-stack developer</h1>
+            </>
+          ) : (
+            <h1 className="line2">
+              My name is Sjur and i am a full-stack developer
+            </h1>
+          )}
         </div>
         <div className="contact-me-container">
           <div className="contact-me fade">
