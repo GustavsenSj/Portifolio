@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
     rgb(98 71 133) 62.53%,
     #813f9b 100%
   );
-  height: 400vh;
+  width: 100vw;
 }
 h1 {
   color: #fff;
