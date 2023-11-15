@@ -16,7 +16,6 @@ function Hero() {
       element.getBoundingClientRect().top -
       element.getBoundingClientRect().height * yOffsetMultiplier;
     window.scrollBy({ top: yOffset, behavior: "smooth" });
-    console.log(yOffset);
   };
 
   useEffect(() => {
