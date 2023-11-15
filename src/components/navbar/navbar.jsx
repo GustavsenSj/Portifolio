@@ -53,9 +53,9 @@ function Navbar() {
     <>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className="hamburger-container">
-          <div className="burger-line1"></div>
-          <div className="burger-line2"></div>
-          <div className="burger-line3"></div>
+          <div className={`burger-line1 ${menuOpen ? "clicked" : ""}`}></div>
+          <div className={`burger-line2 ${menuOpen ? "clicked" : ""}`}></div>
+          <div className={`burger-line3 ${menuOpen ? "clicked" : ""}`}></div>
         </div>
         {menuOpen ? <NavBarElements /> : null}
       </div>
