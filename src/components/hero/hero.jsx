@@ -31,11 +31,10 @@ function Hero() {
         </div>
         <div className="arrow-container fade">
           <svg
-            height="50px"
-            width="50px"
             xmlns="http://www.w3.org/2000/svg"
             onClick={scrollToAbout}
             style={{ cursor: "pointer" }}
+            viewBox="0 0 26 27"
           >
             <polygon
               fill="#ffffff96"
