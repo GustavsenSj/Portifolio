@@ -12,9 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div className="warning">
       <p>
         ⚠️ Your browser does not support Scroll-Linked Animations. This website
-        might not work as intended. To cater for this a{" "}
-        <a href="https://github.com/flackr/scroll-timeline">polyfill</a> has
-        been loaded. ⚠️
+        might not work as intended. please use Chrome 115 or newer.⚠️
       </p>
     </div>
     <Hero />
