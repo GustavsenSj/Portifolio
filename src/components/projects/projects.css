@@ -92,6 +92,9 @@
     width: 100%;
     gap: 5rem;
   }
+  .project-description {
+    max-width: 100%;
+  }
   .project-content {
     width: 100%;
     flex-direction: column-reverse;
