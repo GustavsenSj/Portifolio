@@ -100,7 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   position: absolute;
   bottom: 10%;
   height: 50px;
@@ -137,16 +137,21 @@
   }
 }
 
+@supports (animation-timeline: view()) {
+  .blob-container {
+    view-timeline-axis: block;
+    animation: linear fade-blob both;
+    animation-timeline: --page-scroll;
+    animation-range: 45% 55%;
+  }
+}
+
 /* blobs from https://codepen.io/LA_water/pen/rNaYZBb */
 .blob-container {
   width: 100vw;
   position: absolute;
   top: 0;
   overflow: hidden;
-  view-timeline-axis: block;
-  animation: linear fade-blob both;
-  animation-timeline: --page-scroll;
-  animation-range: 45% 55%;
 }
 .blob {
   background: #90909a4a;

@@ -5,10 +5,10 @@ This is my portfolio site. It's a hobby project to learn more about css animatio
 ## Credits where credits are due
 
 - The animated "blobs" in the background is from @LA_water link to [codepen](https://codepen.io/LA_water/pen/rNaYZBb)
-- The pages uses ScollTimline and as most browser does not support this (as of 09/11/23) a polyfill is used to make it work in most browsers. The polyfill is from [Scroll-timeline Polyfill](https://github.com/flackr/scroll-timeline)
-
+- The pages uses ScollTimline and as most browser does not support this (as of 09/11/23). To display the site correctly use a browser build on chrome 115 or newer.
 
 ## How to setup the project on your local machine
+
 The project uses [Firestore](https://console.firebase.google.com/) for storage. To setup the project on your local machine you need to create a file called `firebase.js` in the `src` folder. The file should look like this:
 
 ```javascript
@@ -16,7 +16,7 @@ The project uses [Firestore](https://console.firebase.google.com/) for storage. 
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration 
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
   authDomain: import.meta.env.VITE_REACT_APP_AUTH_DOMAIN,
@@ -32,9 +32,9 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 ```
 
-You also need to create a `.env` file in the root folder. 
+You also need to create a `.env` file in the root folder.
 All the values you will find in your firebase console project settings.
-The file should look like this: 
+The file should look like this:
 
 ```
 VITE_REACT_APP_API_KEY= your api key
