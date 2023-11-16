@@ -23,6 +23,18 @@
   display: none;
 }
 
+#navbar-content {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #0e115463;
+  width: 100vw;
+  padding: 3vh;
+  align-items: flex-end;
+  right: 0;
+}
+
 .hamburger-container {
   display: flex;
   flex-direction: column;
