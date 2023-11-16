@@ -65,14 +65,20 @@ p {
   .warning:not([data-bug]) {
     display: none;
   }
-}
-
-.fade-out {
-  view-timeline-name: --fade-out-object;
-  view-timeline-axis: block;
-  animation: linear fade-out both;
-  animation-timeline: --fade-out-object;
-  animation-range: contain 75% cover 90%;
+  .fade-out {
+    view-timeline-name: --fade-out-object;
+    view-timeline-axis: block;
+    animation: linear fade-out both;
+    animation-timeline: --fade-out-object;
+    animation-range: contain 75% cover 90%;
+  }
+  .fade {
+    view-timeline-name: --fade-out-object;
+    view-timeline-axis: block;
+    animation: linear fade-in both;
+    animation-timeline: --fade-out-object;
+    animation-range: contain 0% contain 100%;
+  }
 }
 
 @keyframes fade-out {
@@ -100,14 +106,6 @@ p {
   100% {
     opacity: 0;
   }
-}
-
-.fade {
-  view-timeline-name: --fade-out-object;
-  view-timeline-axis: block;
-  animation: linear fade-in both;
-  animation-timeline: --fade-out-object;
-  animation-range: contain 0% contain 100%;
 }
 
 @media (max-width: 700px) {
