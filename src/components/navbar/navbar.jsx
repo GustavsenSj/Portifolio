@@ -5,9 +5,18 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    const content = document.getElementById("navbar-content");
     setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      content.style.display = "flex";
+      document.getElementById("navbar-content").style.top =
+        document
+          .getElementsByClassName("hamburger-menu")[0]
+          .getBoundingClientRect().height + "px";
+    } else {
+      content.style.display = "none";
+    }
   };
-
   const handleClicked = (value) => {
     let yOffsetMultiplier = 0.3;
     return () => {
@@ -53,13 +62,13 @@ function Navbar() {
 
   return (
     <>
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        <div className="hamburger-container">
+      <div className="hamburger-menu">
+        <div className="hamburger-container" onClick={toggleMenu}>
           <div className={`burger-line1 ${menuOpen ? "clicked" : ""}`}></div>
           <div className={`burger-line2 ${menuOpen ? "clicked" : ""}`}></div>
           <div className={`burger-line3 ${menuOpen ? "clicked" : ""}`}></div>
         </div>
-        {menuOpen ? <NavBarElements /> : null}
+        <div id="navbar-content">{menuOpen ? <NavBarElements /> : null}</div>
       </div>
       <div className="navbar-container">
         <NavBarElements />

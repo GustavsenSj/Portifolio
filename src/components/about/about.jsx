@@ -10,17 +10,17 @@ function About() {
           <div className="about-container">
             <h1 className="fade title">About me:</h1>
             <p className="fade">
-              I am an enthusiastic and eager developer. Whom has strong desire
-              to continue and grow myself both as a developer and as an
-              individual. I Have always been interested in technology and enjoys
-              to keep myself up to date with new technologies. I recently
-              completed a bachelor&apos;s degree in computer science with a
-              specialization in application development at NTNU. <br /> <br />
-              During my studies I had the opportunity to work with a wide range
-              of technologies and work methodologies, both independently and as
-              part of a team. In addition to the core subjects of the studies, I
-              had elective courses in Mobile Applications, Computer Graphics,
-              Game Development, and Internship.
+              I&apos;m a keen and eager developer with a strong desire to keep
+              growing both professionally and personally. I&apos;ve always been
+              fascinated by technology and make it a point to stay updated on
+              the latest advancements. Recently, I earned a bachelor&apos;s
+              degree in computer science with a focus on application development
+              from NTNU. <br /> <br />
+              Throughout my studies, I got hands-on experience with various
+              technologies and work approaches, both on my own and in team
+              settings. In addition to the main subjects, I took elective
+              courses in Mobile Applications, Computer Graphics, Game
+              Development, and completed an internship.
             </p>
           </div>
           <div className="image-container fade">
@@ -33,15 +33,15 @@ function About() {
           </div>
           <div className="about-container">
             <p className="fade">
-              Throughout my work as a consultant and a student I hav gained
-              extensive experience in various areas. I have been involved in
-              several projects, developing backend REST API services in Java and
-              .NET, various web applications using technologies such as React,
-              Next.js, and Angular. I am also experienced in using both
-              JavaScript and TypeScript. Furthermore, I have also worked on
-              mobile applications using Flutter. For all these projects, I ahve
-              used integrated databases, including SQL databases like PostgreSQL
-              and NoSQL databases like Firebase.
+              In my roles as a consultant and student, I&apos;ve gained broad
+              experience in diverse areas. I&apos;ve worked on multiple
+              projects, creating backend REST API services using Java and .NET,
+              as well as developing various web applications with technologies
+              like React, Next.js, and Angular. I&apos;m proficient in both
+              JavaScript and TypeScript. Additionally, I&apos;ve contributed to
+              mobile applications using Flutter. In all these projects,
+              I&apos;ve seamlessly integrated databases, utilizing SQL databases
+              such as PostgreSQL and NoSQL databases like Firebase.
             </p>
           </div>
         </div>
