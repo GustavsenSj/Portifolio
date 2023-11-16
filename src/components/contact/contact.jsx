@@ -16,12 +16,16 @@ function Contact() {
         <h1 className="fade">Contact me</h1>
         <div className="contact-content">
           <div className="contact-information fade">
-            <h2>Get in touch</h2>
-            <p>Email:</p>
-            <p>Linkedin</p>
-            <p>GitHub</p>
+            {/* <h2>Get in touch:</h2> */}
+            <a href="mailto:sjurgustavsen@gmail.com">
+              Mail: Sjurgustavsen@gmail.com
+            </a>
+            <a href="https://no.linkedin.com/in/sjur-gustavsen-0b6352186">
+              Linkedin
+            </a>
+            <a href="https://github.com/GustavsenSj">GitHub</a>
           </div>
-
+          {/* 
           <form className="contact-form" onSubmit={sendContact}>
             <div className="fade">
               <input className="form-text" name="name" placeholder="Name" />
@@ -35,7 +39,7 @@ function Contact() {
             <button className="fade" type="submit">
               Send
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>
