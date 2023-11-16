@@ -5,7 +5,6 @@ import Hero from "./components/hero/hero.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import About from "./components/about/about.jsx";
 import Projects from "./components/projects/projects.jsx";
-import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
